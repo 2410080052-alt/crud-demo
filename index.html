@@ -11,12 +11,14 @@
       <div class="container">
                 <h1>Student Management</h1>
               <div class="form-container">
-                          <input type="hidden" id="student-id">
-                          <input type="text" id="name" placeholder="Name">
-                          <input type="email" id="email" placeholder="Email">
-                          <input type="text" id="course" placeholder="Course">
-                          <input type="text" id="grade" placeholder="Grade (Optional)">
-                          <button id="save-btn">Save Student</button>button>
+                          <form id="student-form">
+                                          <input type="hidden" id="student-id">
+                                          <input type="text" id="name" placeholder="Name" required>
+                                          <input type="email" id="email" placeholder="Email" required>
+                                          <input type="text" id="course" placeholder="Course" required>
+                                          <input type="text" id="grade" placeholder="Grade (Optional)">
+                                          <button type="submit" id="save-btn">Add Student</button>button>
+                          </form>form>
               </div>div>
               <table>
                             <thead>
@@ -28,7 +30,9 @@
                                                 <th>Actions</th>
                                               </tr>
                             </thead>
-                          <tbody id="student-table-body"></tbody>tbody>
+                          <tbody id="student-table-body">
+                              <!-- Students will be loaded here -->
+                          </tbody>tbody>
               </table>
       </div>div>
     <script src="config.js"></script>
