@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Student Management</title>
       <link rel="stylesheet" href="style.css">
       <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -16,32 +15,19 @@
                                           <input type="text" id="name" placeholder="Name" required>
                                           <input type="email" id="email" placeholder="Email" required>
                                           <input type="text" id="course" placeholder="Course" required>
-                                          <input type="text" id="grade" placeholder="Grade (Optional)">
-                                          <button type="submit" id="save-btn">Add Student</button>
+                                          <input type="text" id="grade" placeholder="Grade">
+                                          <button type="submit" id="save-btn">Add Student</button>button>
                           </form>form>
               </div>div>
               <table>
-                            <thead>
-                                              <tr>
-                                                                    <th>Name</th>
-                                                <th>Email</th>
-                                                <th>Course</th>
-                                                <th>Grade</th>
-                                                <th>Actions</th>
-                                              </tr>
-                            </thead>
-                          <tbody id="student-table-body">
-                              <!-- Students will be loaded here -->
-                          </tbody>tbody>
+                            <thead><tr><th>Name</th><th>Email</th><th>Course</th><th>Grade</th><th>Actions</th></tr></thead>
+                          <tbody id="student-table-body"></tbody>tbody>
               </table>
       </div>div>
-    <script src="config.js"></script>
-    <script src="app.js"></script>
+    <script src="config.js"></script><script src="app.js"></script>
 </body>
 </html>html>
-</th></th>
-                                              </tr>
-                            </thead>
+</th></th></tr></thead>
               </table></h1>
 </body></title>
   </head>
